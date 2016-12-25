@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Aging Report</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap/bootstrap-datetimepicker.css" rel="stylesheet">
+        <!-- MetisMenu CSS -->
+        <link href="../css/metisMenu/metisMenu.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../css/sb-admin-2.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+           <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0)">Lead Management System</a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <ul class="nav navbar-nav sidebar-icon hide-on-small">
+                    <li><a href="javascript:void(0)" class="toggle-sidebar" title="Toggle Sidebar"><i class="fa fa-bars" aria-hidden="true" id="#icon-sidebar"></i></a></li>
+                </ul>
+
+                <ul class="nav navbar-top-links navbar-right">
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-tasks">
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="today-followup"><i class="fa fa-history" aria-hidden="true"></i> Today's Followup</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Prathmesh Yadav
+                                        <span class="pull-right text-muted small">4:00 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Yatharth Shekhar
+                                        <span class="pull-right text-muted small">4:30 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Tushar Agrawal
+                                        <span class="pull-right text-muted small">4:45 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Aditi Kumari
+                                        <span class="pull-right text-muted small">5:00 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center read-all" href="#">
+                                    See All followups
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- /.dropdown-tasks -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">26 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">35 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">1 hour ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center read-all" href="#">
+                                    See All Alerts
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-alerts -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation" id="left-sidebar">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
+                            
+                            <li class="">
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Lead Management<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="lead-creation.html"><i class="fa fa-check-circle" aria-hidden="true"></i> Create Lead</a>
+                                    </li>
+                                    <li>
+                                        <a href="lead-listing.html"><i class="fa fa-list-ul" aria-hidden="true"></i> Lead Listing</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-lead.html"><i class="fa fa-edit fa-fw" aria-hidden="true"></i> Manage Lead</a>
+                                    </li>
+                                    <li>
+                                        <a href="import-leads.html"><i class="fa fa-cloud-download" aria-hidden="true"></i> Import Leads</a>
+                                    </li>
+                                   
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+                            
+                            <li class="">
+                                <a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> Content Management<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="add-content.html"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Content</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-content.html"><i class="fa fa-align-center" aria-hidden="true"></i> Manage Content</a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+                            <li class="">
+                                <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Campaign Management<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="campagin-creation.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Create Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-campagin.html"><i class="fa fa-tasks" aria-hidden="true"></i> Manage Campaign</a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+                           <li class="">
+                                <a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i> Reports<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="lead-creation-report.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Lead Creation Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="convertion-report.html"><i class="fa fa-check-square-o" aria-hidden="true"></i> Convertion Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="follow-up-report.html"><i class="fa fa-calendar" aria-hidden="true"></i> Follow-up Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="aging-report.html"><i class="fa fa-hourglass-half" aria-hidden="true"></i> Aging Report</a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
+            <!-- Page Content -->
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 zero-margin">
+                            <h1 class="page-header">Aging Report</h1>
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                    <!-- /.row -->
+                    
+                    
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-filter" aria-hidden="true"></i> Criteria</h3>
+                      </div>
+                      <div class="panel-body">
+                      		
+                            <div class="row margin-p-row">
+                                <div class="col-sm-4 col-md-2 right-padding">
+                                    <p>State </p>
+                                </div>
+                                <div class="col-sm-8 col-md-4">
+                                    <select class="form-control">
+                                    	<option>Select</option>
+                                        <option>Maharashtra</option>
+                                        <option>Goa</option>
+                                        <option>Madhya Pradhesh</option>
+                                        <option>Assam</option>
+                                        <option>Bihar</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-sm-4 col-md-2 right-padding">
+                                    <p>Salesman </p>
+                                </div>
+                                <div class="col-sm-8 col-md-4">
+                                    <select class="form-control">
+                                    	<option>Select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                        <option>Value 4</option>
+                                        <option>Value 5</option>
+                                    </select>
+                                   
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row margin-p-row">
+                                <div class="col-sm-4 col-md-2 right-padding">
+                                    <p>Organization Type </p>
+                                </div>
+                                <div class="col-sm-8 col-md-4">
+                                    <select class="form-control">
+                                    	<option>Select</option>
+                                        <option>Architects</option>
+                                        <option>Interior Designers</option>
+                                        <option>Traders</option>
+                                        <option>OEMs</option>
+                                        <option>Dealers</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-sm-4 col-md-2 right-padding">
+                                    <p>Lead Type </p>
+                                </div>
+                                <div class="col-sm-8 col-md-4">
+                                    <select class="form-control">
+                                    	<option>Select</option>
+                                        <option>Customer</option>
+                                        <option>Lead</option>
+                                        
+                                    </select>
+                                   
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row margin-p-row">
+                                <div class="col-sm-4 col-md-2 right-padding">
+                                    <p>Interval </p>
+                                </div>
+                                <div class="col-sm-8 col-md-4">
+                                     <select class="form-control">
+                                    	<option>Select</option>
+                                        <option>Week</option>
+                                        <option>Month</option>
+                                        <option>Quarter</option>
+                                        <option>Biannual </option>
+                                        <option>Annual</option>
+                                        
+                                    </select>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            
+                            <div class="row">
+                               <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                               </div>
+                            </div>
+                            
+                      </div>
+                   </div>   
+                   
+                   <div class="panel panel-default collapse" id="collapseExample">
+                   		<div class="panel-body">
+                        	<div class="row">
+								<div class="col-md-6 zero-margin">
+									<p class="text-center total-count" style="margin-bottom:0;">Total Count : 1024</a></p>
+								</div>
+								<div class="col-md-6 zero-margin">
+									<p class="text-center" style="margin-bottom:0;"><a href="#" role="button" class="btn btn-primary" title="Clicl to download"><i class="fa fa-download" aria-hidden="true"></i> Download Report</a></p>
+								</div>
+							</div>
+                           
+                        </div>
+                   </div> 
+				 	
+                    
+                    
+                   
+                   
+                   
+                    
+
+                    
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="../js/jquery-2.1.1.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../js/bootstrap/bootstrap.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../js/metisMenu/metisMenu.js"></script>
+		
+       
+         <!-- Bootstrap Date Time Picker -->
+        <script type="text/javascript" src="../js/bootstrap/bootstrap-datetimepicker.js"></script> 
+        <script type="text/javascript">
+            $('.form_date').datetimepicker({
+                language: 'en',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+                forceParse: 0
+            });
+            $('.form_time').datetimepicker({
+                language: 'en',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 1,
+                minView: 0,
+                maxView: 1,
+                forceParse: 0
+            });
+        </script>
+        
+        <!-- Custom Theme JavaScript -->
+        <script src="../js/sb-admin-2.js"></script>
+        <script src="../js/default.js"></script>
+        
+        <script src="../js/table-data.js" type="text/javascript"></script>
+        
+
+    </body>
+
+</html>

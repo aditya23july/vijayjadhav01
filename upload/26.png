@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width='468px' height='150px' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+<desc>*</desc>
+<text x='24px' y='135px' font-family='Arial' font-size='24'>*</text>
+<rect x='15px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='24px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='30px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='39px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='48px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<desc>A</desc>
+<text x='63px' y='135px' font-family='Arial' font-size='24'>A</text>
+<rect x='54px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='63px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='69px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='78px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='84px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<desc>D</desc>
+<text x='102px' y='135px' font-family='Arial' font-size='24'>D</text>
+<rect x='93px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='99px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='105px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='117px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='123px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<desc>I</desc>
+<text x='141px' y='135px' font-family='Arial' font-size='24'>I</text>
+<rect x='132px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='138px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='147px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='156px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='165px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<desc>T</desc>
+<text x='180px' y='135px' font-family='Arial' font-size='24'>T</text>
+<rect x='171px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='177px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='183px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='192px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='204px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<desc>Y</desc>
+<text x='219px' y='135px' font-family='Arial' font-size='24'>Y</text>
+<rect x='210px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='222px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='228px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='237px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='243px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<desc>A</desc>
+<text x='258px' y='135px' font-family='Arial' font-size='24'>A</text>
+<rect x='249px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='258px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='264px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='273px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='279px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<desc>2</desc>
+<text x='297px' y='135px' font-family='Arial' font-size='24'>2</text>
+<rect x='288px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='294px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='306px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='312px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='318px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<desc>6</desc>
+<text x='336px' y='135px' font-family='Arial' font-size='24'>6</text>
+<rect x='327px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='333px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='345px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='354px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='360px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<desc>*</desc>
+<text x='375px' y='135px' font-family='Arial' font-size='24'>*</text>
+<rect x='366px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='375px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+<rect x='381px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='390px' y='7.5px' width='6px' height='105px' fill='black' stroke-width='0' />
+<rect x='399px' y='7.5px' width='3px' height='105px' fill='black' stroke-width='0' />
+</svg>

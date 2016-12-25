@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Manage Campaign</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap/bootstrap-datetimepicker.css" rel="stylesheet">
+        <!-- MetisMenu CSS -->
+        <link href="../css/metisMenu/metisMenu.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../css/sb-admin-2.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0)">Lead Management System</a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <ul class="nav navbar-nav sidebar-icon hide-on-small">
+                    <li><a href="javascript:void(0)" class="toggle-sidebar" title="Toggle Sidebar"><i class="fa fa-bars" aria-hidden="true" id="#icon-sidebar"></i></a></li>
+                </ul>
+
+                <ul class="nav navbar-top-links navbar-right">
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-tasks">
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="today-followup"><i class="fa fa-history" aria-hidden="true"></i> Today's Followup</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Prathmesh Yadav
+                                        <span class="pull-right text-muted small">4:00 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Yatharth Shekhar
+                                        <span class="pull-right text-muted small">4:30 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Tushar Agrawal
+                                        <span class="pull-right text-muted small">4:45 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        Aditi Kumari
+                                        <span class="pull-right text-muted small">5:00 pm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center read-all" href="#">
+                                    See All followups
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- /.dropdown-tasks -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">26 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">35 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-user" aria-hidden="true"></i> New Lead added.
+                                        <span class="pull-right text-muted small">1 hour ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center read-all" href="#">
+                                    See All Alerts
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-alerts -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation" id="left-sidebar">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
+                            
+                            <li class="">
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Lead Management<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="lead-creation.html"><i class="fa fa-check-circle" aria-hidden="true"></i> Create Lead</a>
+                                    </li>
+                                    <li>
+                                        <a href="lead-listing.html"><i class="fa fa-list-ul" aria-hidden="true"></i> Lead Listing</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-lead.html"><i class="fa fa-edit fa-fw" aria-hidden="true"></i> Manage Lead</a>
+                                    </li>
+                                    <li>
+                                        <a href="import-leads.html"><i class="fa fa-cloud-download" aria-hidden="true"></i> Import Leads</a>
+                                    </li>
+                                   
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+                            
+                            <li class="">
+                                <a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> Content Management<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="add-content.html"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Content</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-content.html"><i class="fa fa-align-center" aria-hidden="true"></i> Manage Content</a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+                            <li class="">
+                                <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Campaign Management<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="campagin-creation.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Create Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-campagin.html"><i class="fa fa-tasks" aria-hidden="true"></i> Manage Campaign</a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            
+							<li class="">
+                                <a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i> Reports<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li>
+                                        <a href="lead-creation-report.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Lead Creation Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="convertion-report.html"><i class="fa fa-check-square-o" aria-hidden="true"></i> Convertion Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="follow-up-report.html"><i class="fa fa-calendar" aria-hidden="true"></i> Follow-up Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="aging-report.html"><i class="fa fa-hourglass-half" aria-hidden="true"></i> Aging Report</a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                           
+                            
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
+
+            <!-- Page Content -->
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                   
+                    
+                    <div class="row">
+                    	<div class="col-md-12 zero-margin">
+                            <div class="row  page-head">
+                                <div class="col-md-6 zero-margin left-padding">
+                                    <h1 class="">Manage Campaign</h1>
+                                </div>
+                                <div class="col-md-3 zero-margin">
+                                	<div class="row margin-p-row">
+                                    
+                                    	<div class="col-md-5 text-right right-padding zero-margin">
+                                            <p><strong>Status</strong></p>
+                                        </div>
+                                        <div class="col-md-7 zero-margin">
+                                            <select class="form-control">
+                                                <option>Select</option>
+                                                <option>Scheduled</option>
+                                                <option>In-progress</option>
+                                                <option>Completed</option>
+                                                <option>Deactivated</option>
+                                                
+                                                
+                                               
+                                            </select>
+
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-md-3 zero-margin right-padding">
+                                    <input type="text" class="form-control searchbox search-exel">
+                                    <img class="serch-exel-img" src="../images/icons/exel.png">
+                                </div>
+                                <!-- /.col-lg-12 -->
+                            </div>
+                            <!-- /.row -->
+						</div>
+                  </div>
+                    
+                  
+                  <div class="row">
+                    	<div class="col-md-12">
+                        	
+                            <div class="table-responsive">
+                                <table class="table table-bordered small-font-tbl">
+                                    <tr class="bg-gray">
+                                        <th></th>
+                                        
+                                        <th>Campaign <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        
+                                        <th class="text-center">Status <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Scheduled On <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Created By <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Created Date <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Updated By <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Updated Date <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Sent To <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th>Viewed By <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                        <th></th>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        
+                                        <td>Campaign Title</td>
+                                        
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-primary btn-xs campaign-status">Scheduled</button></td>
+                                        <td>01 Jan 2016 3:00:00</td>
+                                        <td>Aditya</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Dinesh</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td class="text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>2</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-danger btn-xs campaign-status">Deactivated</button></td>
+                                        <td>05 Jan 2016 4:30:00</td>
+                                        <td>Abhishek</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Roshan</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>3</td>
+                                        
+                                        <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-warning btn-xs campaign-status">In-progress</button></td>
+                                        <td>15 Jan 2016 4:30:00</td>
+                                        <td>Roshan</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Saurabh</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>44</td>
+                                        <td>3</td>
+                                        <td class="text-center"><i class="fa fa-pause-circle-o" aria-hidden="true" style="font-size: 16px;"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>4</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-danger btn-xs campaign-status">Deactivated</button></td>
+                                        <td>16 Jan 2016 5:15:00</td>
+                                        <td>Rohit</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Sagar</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>30</td>
+                                        <td>30</td>
+                                        <td></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>5</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-warning btn-xs campaign-status">In-progress</button></td>
+                                        <td>25 Jan 2016 12:10:00</td>
+                                        <td>Saurabh</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Roshan</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>69</td>
+                                        <td>3</td>
+                                        <td class="text-center"><i class="fa fa-pause-circle-o" aria-hidden="true" style="font-size: 16px;"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>6</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-primary btn-xs campaign-status">Scheduled</button></td>
+                                        <td>31 Jan 2016 14:15:00</td>
+                                        <td>Roshan</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Dinesh</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td class="text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>7</td>
+                                        
+                                         <td>Campaign Title</td>
+                                       
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-xs campaign-status">Completed</button></td>
+                                        <td>12 Feb 2016 20:15:00</td>
+                                        <td>Mohan</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Rahul</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>79</td>
+                                        <td>75</td>
+                                        <td class="text-center"><img src="../images/icons/exel.png" class="tbl-exel"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>8</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-xs campaign-status">Completed</button></td>
+                                        <td>16 Mar 2016 21:15:00</td>
+                                        <td>Dinesh</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Adity</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>20</td>
+                                        <td>17</td>
+                                        <td class="text-center"><img src="../images/icons/exel.png" class="tbl-exel"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>9</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-primary btn-xs campaign-status">Scheduled</button></td>
+                                        <td>16 Apr 2016 5:15:00</td>
+                                        <td>Abhishek</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Piyush</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td class="text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>10</td>
+                                        
+                                         <td>Campaign Title</td>
+                                        
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-xs campaign-status">Completed</button></td>
+                                        <td>02 May 2016 10:15:00</td>
+                                        <td>Samarth</td>
+                                        <td>25 Dec 2015</td>
+                                        <td>Roshan</td>
+                                        <td>30 Dec 2015</td>
+                                        <td>15</td>
+                                        <td>10</td>
+                                        <td class="text-center"><img src="../images/icons/exel.png" class="tbl-exel"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            
+                            <div class="text-center">
+                                <ul class="pagination pagination-sm">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">«</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">»</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            
+                        </div>
+                  </div>      
+                  
+                   
+                   
+                  
+                   
+                  
+                   
+
+                    
+
+                    
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="../js/jquery-2.1.1.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../js/bootstrap/bootstrap.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../js/metisMenu/metisMenu.js"></script>
+		
+       
+        
+        
+        <!-- Custom Theme JavaScript -->
+        <script src="../js/sb-admin-2.js"></script>
+        <script src="../js/default.js"></script>
+        
+        
+        
+
+    </body>
+
+</html>
