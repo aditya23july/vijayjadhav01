@@ -97,12 +97,101 @@ class Web extends CI_Controller {
                                     $this->viewIndex();
                                     }
                                     break;
-           
+			case "socialLogin" : 
+                                    $this->socialLogin();
+                                    
+                                    break;
             default : $this->viewIndex();
                 break;
         }
     }
-   
+    private function socialLogin(){
+				$response = $this->security->xss_clean($this->input->post('response'));
+				$type = $this->security->xss_clean($this->input->post('type'));
+				if($type=='FACEBOOK'){
+					$email= $this->security->xss_clean($response['email']);
+					$name= $this->security->xss_clean($response['name']);
+					$id= $this->security->xss_clean($response['id']);
+				}
+				else if($type=='GOOGLE'){
+					 $id=$response['Eea'];
+					 $name=$response['ig'];
+					 $email=$response['U3'];
+				}
+				else{
+					echo 'FAILED';
+				}
+				
+                
+                $record = $this->db->query('select * from tbl_user_master where `username`=?', array($email))->row();
+				if(isset($record->email)){
+				
+					if(strlen(trim($record->login_type))>0){
+						if($type==$record->login_type && $id==$record->login_id){
+						
+							$session_data = $this->session->userdata;
+							$this->session->set_userdata("user_id", $record->id);
+							$this->session->set_userdata("name", $record->name);
+							$this->session->set_userdata("role_id", 1);
+							$this->session->set_userdata("user_type", $record->user_type);
+						}else{
+						
+							$data = array(
+										
+										'login_id'=>$id,
+										'login_type'=>$type
+									);
+							$this->db->where('id',$record->id);
+							$this->db->update('tbl_user_master', $data);
+							$session_data = $this->session->userdata;
+							$this->session->set_userdata("user_id", $record->id);
+							$this->session->set_userdata("name", $record->name);
+							$this->session->set_userdata("role_id", 1);
+							$this->session->set_userdata("user_type", $record->user_type);
+							
+						}
+					}else{
+						$data = array(
+										
+										'login_id'=>$id,
+										'login_type'=>$type
+									);
+							$this->db->where('id',$record->id);
+							$this->db->update('tbl_user_master', $data);
+							$session_data = $this->session->userdata;
+							$this->session->set_userdata("user_id", $record->id);
+							$this->session->set_userdata("name", $record->name);
+							$this->session->set_userdata("role_id", 1);
+							$this->session->set_userdata("user_type", $record->user_type);
+						 
+					}
+				}else{
+				
+					$data = array(
+										'username' => $email,
+										'name' => $name,
+										'role_id' => 1,
+										'user_type' => 'CUSTOMER',
+										'email' => $email,
+										'status' => 'ACTIVE',
+										'created_date' => Date('Y-m-d H:i:s'),
+										'login_id'=>$id,
+										'login_type'=>$type
+									);
+						$this->db->insert('tbl_user_master', $data);
+						$user_id = $this->db->insert_id();
+						$session_data = $this->session->userdata;
+						$this->session->set_userdata("user_id", $user_id);
+						$this->session->set_userdata("name",  $name);
+						$this->session->set_userdata("role_id", 1);
+						$this->session->set_userdata("user_type", 'CUSTOMER');
+				}
+				$this->session->set_userdata("login_type", $type);
+				$this->session->set_userdata("login_id", $id);
+				echo 'SUCCESS';
+				exit;
+                
+	}
     private function search(){
         if(isset($_POST['product_cat']) && isset($_POST['search']) ){
             $category = $_POST['product_cat'];
@@ -682,6 +771,75 @@ class Web extends CI_Controller {
     }
 
     private function viewlogout() {
+		$session_data =$this->session->userdata;
+		print_r($session_data);
+		if(isset($session_data['login_id'])){
+			if($session_data['login_type']=='FACEBOOK'){
+			echo " <script> function statusChangeCallback(response) {
+ 
+    if (response.status === 'connected') {
+   
+      FB.getLoginStatus(function(response) {
+							if (response.status === 'connected') {
+								FB.logout(function(response) {
+									
+									
+								});
+							}
+						});
+	} else if (response.status === 'not_authorized') {
+   
+    } else {
+    .
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+		getaccesstoken(response);
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '614547435399258',
+    cookie     : true, 
+                        
+    xfbml      : true,  
+    version    : 'v2.7' 
+  });
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/sdk.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+";
+				echo "function facebookLogout(){
+						
+					}
+				</script>";
+				
+			}else if ($session_data['login_type']=='GOOGLE'){
+				echo '
+  <iframe id="logoutframe" src="https://accounts.google.com/logout" style="display: none"></iframe>
+';
+			}
+		}
+		
+		$this->session->unset_userdata('login_type');
+		$this->session->unset_userdata('login_id');
         $this->session->unset_userdata('user_id');
         $this->session->unset_userdata('name');
         $this->session->unset_userdata('role_id');
@@ -693,6 +851,7 @@ class Web extends CI_Controller {
         $this->session->set_flashdata('user_type', NULL);
         $this->session->set_flashdata('logged_in', NULL);
         $this->session->sess_destroy();
+		
         redirect(base_url());
     }
 
